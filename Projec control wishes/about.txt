@@ -1,0 +1,6 @@
+masukan jumlah peminjam :3   
+
+masukan nama mahasiswa  :helmy  ===     nama klien;
+masukan npm mahasiswa   :099            no tlp     
+pilih prodi             :1              class :
+masukan jumlah buku     :3              lama menginapo
