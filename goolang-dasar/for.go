@@ -24,7 +24,7 @@ func main() {
 
 	fmt.Println("range iteration")
 	//for range
-	for value := range names {
-		fmt.Println(names[value])
+	for _, value := range names {
+		fmt.Println(value)
 	}
 }
