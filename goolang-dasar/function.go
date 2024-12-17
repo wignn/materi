@@ -17,6 +17,15 @@ func main() {
 	//variadic function with slice
 	numers := []int{1, 2, 3, 4}
 	fmt.Println(test7(numers...));
+
+	//function as value
+	value := test8;
+	fmt.Println(value(2));
+	test10(test9)
+
+	//function as type
+	sayHelo("mr", filter)
+
 }
 
 //function without parameter
@@ -61,3 +70,31 @@ func test7(params ...int) int {
 
 
 //function with value
+func test8(params int) int {
+	return params
+}
+
+//function as params
+func test10(test9 func(string) string) {
+	fmt.Println("hello", test9("test"))
+}
+
+//function with string parameter
+func test9(params string) string {
+	return "mr"
+}
+
+type Filter func(string) string
+
+func sayHelo(name string,filter Filter){
+	fmt.Println("hello ",filter(name))
+}
+
+
+func filter(name string) string {
+	if name == "hitam" {
+		return "nigger"
+	} else{
+		return name
+	}
+}
