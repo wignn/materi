@@ -1,19 +1,17 @@
 package main
 
-
 import "fmt"
 
 type Adress struct {
 	City, State, country string
 }
 
-func main(){
-	alamat := new(Adress)
-	fmt.Println(alamat)
-	if alamat == nil {
-		fmt.Println("Alamat kosong")
-	}
+func ChangeAdress(alamat *Adress) {
 	alamat.City = "Jakarta"
+}
 
+func main() {
+	alamat := &Adress{}
+	ChangeAdress(alamat)
 	fmt.Println(alamat)
 }
