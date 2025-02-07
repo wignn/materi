@@ -1,3 +1,13 @@
+/**
+ * This script demonstrates the usage of different number types in PHP.
+ * 
+ * It covers:
+ * - Integer types: decimal, octal, hexadecimal, binary, and usage of underscores in numbers.
+ * - Float types: standard float, float with scientific notation (both positive and negative exponents), and usage of underscores in floats.
+ * - Integer overflow example.
+ * 
+ * The script uses `var_dump` to display the type and value of each number.
+ */
 <?php
 /*
 * type data integer
